@@ -1,20 +1,20 @@
 class LocationVector {
 
     private final int deltaRow;
-    private final int delteColumn;
+    private final int deltaColumn;
 
     public LocationVector(final int deltaRow, final int delteColumn) {
         super();
         this.deltaRow = deltaRow;
-        this.delteColumn = delteColumn;
+        this.deltaColumn = delteColumn;
     }
     
     public int getDeltaRow() {
         return deltaRow;
     }
     
-    public int getDelteColumn() {
-        return delteColumn;
+    public int getDeltaColumn() {
+        return deltaColumn;
     }
     
     @Override
@@ -22,7 +22,7 @@ class LocationVector {
         final int prime = 31;
         int result = 1;
         result = prime * result + deltaRow;
-        result = prime * result + delteColumn;
+        result = prime * result + deltaColumn;
         return result;
     }
     @Override
@@ -40,7 +40,7 @@ class LocationVector {
         if (deltaRow != other.deltaRow) {
             return false;
         }
-        if (delteColumn != other.delteColumn) {
+        if (deltaColumn != other.deltaColumn) {
             return false;
         }
         return true;
