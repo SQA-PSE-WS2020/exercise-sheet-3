@@ -7,10 +7,10 @@
 public class Exercise03 extends Exercise03Base
 {
     void run() {
-        game.initialize();
         game.displayInNewGameWindow();
 
         // TODO: Implement me!
+        
         
         // Leave this call intact for challenge 3!
         challenge3();
