@@ -63,4 +63,9 @@ public class mysterioushamster
     void doSomething9(){
         hamster.write(stepCounter.toString());
     }
+
+    //ignore
+    void write(String text){
+        hamster.write(text);
+    }
 }
