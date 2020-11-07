@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.File;
 import java.io.*;
 /**
- * Beschreiben Sie hier die Klasse MyFirstSimpleHamster.
+ * Beschreiben Sie hier die Klasse HomeworkHamsterGame.
  * 
  * @author (Ihr Name) 
  * @version (eine Versionsnummer oder ein Datum)

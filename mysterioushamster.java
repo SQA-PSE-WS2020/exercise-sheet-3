@@ -11,11 +11,8 @@ public class mysterioushamster
         this.hamster = hamster;
     }
 
-    void doSomething1()
-    {
-        hamster.move();
-        stepCounter++;
-        hamster.write("Ich bin schon " + stepCounter + " Schritte gelaufen");
+    void doSomething1(){
+        hamster.turnLeft();
     }
 
     void doSomething2()
@@ -33,10 +30,13 @@ public class mysterioushamster
         }
     }
 
-    void doSomething3(){
-        hamster.turnLeft();
+    void doSomething3()
+    {
+        hamster.move();
+        stepCounter++;
+        hamster.write("Ich bin schon " + stepCounter + " Schritte gelaufen");
     }
-
+    
     void doSomething4(){
         hamster.turnLeft();
         hamster.turnLeft();
@@ -48,22 +48,21 @@ public class mysterioushamster
         hamster.turnLeft();
     }
 
-    void doSomething6(){
-        hamster.pickGrain();
-    }
-
-    void doSomething7(){
-        hamster.write("Geschafft! :)");
-    }
-
-    int doSomething8(){
+    int doSomething6(){
         return stepCounter;
     }
 
-    void doSomething9(){
+    void doSomething7(){
         hamster.write(stepCounter.toString());
     }
 
+    void doSomething8(){
+        hamster.pickGrain();
+    }
+
+    void doSomething9(){
+        hamster.write("Geschafft! :)");
+    }
     //ignore
     void write(String text){
         hamster.write(text);
